@@ -1,6 +1,41 @@
 sources:
   - name: demo_src
+    description: Данные из БД
     tables:
       - name: aircrafts
+        description: Самолеты
+        columns:
+          - name: aircraft_code
+            description: Код самолета
+          - name: model
+            description: Модель
+          - name: "range"
+            description: Радиус
       - name: airports
+        description: Аэропорты
+        columns:
+          - name: airport_code
+            description: Код Аэропорта
+          - name: airport_name
+            description: Название Аэропорта
+          - name: city
+            description: Город
+          - name: coordinates
+            description: Координаты
+          - name: timezone
+            description: Временная зона
       - name: seats
+        description: Места
+        columns:
+          - name: aircraft_code
+            description: Код самолета
+          - name: seat_no
+            description: Номер места
+          - name: fare_conditions
+            description: Хз че тут писать
+      - name: bookings
+        description: Бронирования
+        columns:
+          - name: book_ref
+          - name: book_date
+          - name: total_amount
