@@ -48,3 +48,17 @@ sources:
             period: day
           filter: current_timestamp::date - book_date::date < 30000
         loaded_at_field: book_date::timestamp
+      - name: flights
+        description: Расписание полетов
+        columns:
+          - name: flight_id
+          - name: flight_no
+          - name: scheduled_departure
+          - name: scheduled_arrival
+          - name: departure_airport
+          - name: arrival_airport
+          - name: status
+          - name: aircraft_code
+          - name: actual_departure
+          - name: actual_arrival
+          - name: load_date
