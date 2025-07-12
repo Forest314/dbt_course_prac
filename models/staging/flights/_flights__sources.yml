@@ -62,3 +62,18 @@ sources:
           - name: actual_departure
           - name: actual_arrival
           - name: load_date
+      - name: tickets
+        description: Билеты
+        columns:
+          - name: ticket_no
+          - name: book_ref
+          - name: passenger_id
+          - name: passenger_name
+          - name: contact_data
+      - name: ticket_flights
+        description: Тип билета
+        columns:
+          - name: ticket_no
+          - name: flight_id
+          - name: fare_conditions
+          - name: amount
