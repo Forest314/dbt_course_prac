@@ -1,13 +1,8 @@
 {{
   config(
     materialized = 'table',
-    on_configuration_change = "apply",
-    indexes=[
-      {
-        "columns": ["book_date"],
-        "unique": false
-      }
-    ]
+    incremental_strategy = 'append',
+    tags = ['bookings']
     )
 }}
 select
