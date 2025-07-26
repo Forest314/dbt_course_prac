@@ -16,3 +16,6 @@ select
     actual_arrival
 
 from {{ source('demo_src', 'flights') }}
+
+
+
